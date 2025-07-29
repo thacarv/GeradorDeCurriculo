@@ -1,0 +1,290 @@
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.4; /* Redução do espaçamento entre linhas */
+  margin: 0;
+  padding: 20px;
+  background-color: #fff; /* Branco */
+  color: #000; /* Preto */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 0; /* Removendo bordas arredondadas */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sutil sombra preta */
+  max-width: 900px;
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  color: #000;
+  margin-top: 0;
+  padding-bottom: 8px; /* Reduzindo o padding */
+  margin-bottom: 15px; /* Reduzindo a margem */
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em; /* Reduzindo um pouco a fonte */
+  margin-bottom: 20px; /* Reduzindo a margem */
+}
+
+h2 {
+  font-size: 1.4em; /* Reduzindo um pouco a fonte */
+}
+
+h3 {
+  font-size: 1.1em; /* Reduzindo um pouco a fonte */
+  color: #333; /* Cinza um pouco mais escuro */
+  margin-bottom: 3px; /* Reduzindo a margem */
+}
+
+.input-section,
+.output-actions {
+  margin-bottom: 20px; /* Reduzindo a margem */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px; /* Reduzindo o padding */
+  border: 1px solid #ccc;
+  border-radius: 0; /* Removendo bordas arredondadas */
+  font-size: 0.9em; /* Reduzindo a fonte */
+  min-height: 100px; /* Reduzindo a altura mínima */
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #333; /* Preto */
+  color: white;
+  padding: 10px 15px; /* Reduzindo o padding */
+  border: none;
+  border-radius: 0; /* Removendo bordas arredondadas */
+  cursor: pointer;
+  font-size: 0.9em; /* Reduzindo a fonte */
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555; /* Cinza mais escuro */
+}
+
+#clearInput {
+  background-color: #666; /* Cinza */
+}
+
+#clearInput:hover {
+  background-color: #888; /* Cinza mais claro */
+}
+
+#copyHtml {
+  background-color: #333;
+}
+
+#copyHtml:hover {
+  background-color: #555;
+}
+
+.cv-preview {
+  border-top: 1px solid #ccc;
+  padding-top: 15px; /* Reduzindo o padding */
+  margin-top: 20px; /* Reduzindo a margem */
+}
+
+.cv-template {
+  border: 1px solid #ddd;
+  padding: 20px; /* Reduzindo o padding */
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  min-height: 300px; /* Reduzindo a altura mínima */
+  position: relative;
+}
+
+.placeholder {
+  text-align: center;
+  color: #888;
+  margin-top: 80px; /* Ajustando a margem */
+  font-style: italic;
+  font-size: 0.9em; /* Reduzindo a fonte */
+}
+
+/* Estilos para o currículo gerado */
+.cv-template section {
+  margin-bottom: 20px; /* Reduzindo a margem */
+  padding-bottom: 10px; /* Reduzindo o padding */
+}
+
+.cv-template section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.cv-template .personal-info {
+  text-align: center;
+  margin-bottom: 20px; /* Reduzindo a margem */
+}
+
+.cv-template .personal-info h2 {
+  font-size: 2em; /* Reduzindo um pouco a fonte */
+  margin-bottom: 3px; /* Reduzindo a margem */
+  color: #000;
+  border-bottom: none;
+}
+
+.cv-template .contact-info p {
+  margin: 0 8px 0 0; /* Ajustando a margem para espaçamento horizontal */
+  font-size: 0.9em;
+  color: #333;
+  display: inline-block; /* Colocando em linha */
+}
+
+.cv-template .contact-info p:not(:last-child)::after {
+  content: " | "; /* Separador */
+}
+
+.cv-template .contact-info a {
+  color: #0000ff; /* Links em azul */
+  text-decoration: none;
+}
+
+.cv-template .contact-info a:hover {
+  text-decoration: underline;
+}
+
+.cv-template ul {
+  list-style: disc; /* Mantendo o disc para as listas de atividades */
+  padding-left: 15px;
+  margin: 5px 0;
+}
+
+.cv-template ul li {
+  margin-bottom: 5px; /* Reduzindo a margem */
+  font-size: 0.9em;
+}
+
+.cv-template .experience-item,
+.cv-template .education-item,
+.cv-template .project-item,
+.cv-template .certification-item {
+  margin-bottom: 10px; /* Reduzindo a margem */
+  border-left: 2px solid #333; /* Borda preta mais fina */
+  padding-left: 10px; /* Reduzindo o padding */
+}
+
+.cv-template .experience-item h3,
+.cv-template .education-item h3,
+.cv-template .project-item h3,
+.cv-template .certification-item h3 {
+  margin-bottom: 1px; /* Reduzindo a margem */
+  font-size: 1em; /* Ajustando a fonte */
+}
+
+.cv-template .experience-item p,
+.cv-template .education-item p,
+.cv-template .project-item p,
+.cv-template .certification-item p {
+  margin: 0 0 3px 0; /* Reduzindo a margem */
+  color: #555;
+  font-size: 0.85em; /* Reduzindo a fonte */
+}
+
+.cv-template .experience-item ul {
+  margin-left: 15px;
+  margin-top: 3px;
+}
+
+.cv-template .skills-list {
+  font-size: 0.9em;
+}
+
+.cv-template .skills-list h3 {
+  font-size: 1.1em;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-bottom: 3px;
+}
+
+.cv-template .skills-list p {
+  margin: 0;
+}
+
+.cv-template .skills-list span {
+  display: inline-block;
+  background-color: #f2f2f2; /* Cinza claro */
+  color: #333; /* Preto */
+  padding: 3px 8px; /* Reduzindo o padding */
+  border-radius: 0; /* Removendo bordas arredondadas */
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 0.85em; /* Reduzindo a fonte */
+}
+
+/* Estilos para impressão */
+@media print {
+  body {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    color: #000;
+  }
+
+  .container {
+    box-shadow: none;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  /* Oculta elementos da interface do usuário, mas mantém h2 visível */
+  .input-section,
+  .output-actions,
+  h1:not(.print-title),
+  .cv-preview > h2 {
+    display: none;
+  }
+
+  /* Garante que os títulos das seções (h2) apareçam na impressão */
+  .cv-template h2 {
+    display: block !important; /* Sobrescreve qualquer display: none */
+    margin-top: 15px; /* Adiciona um pouco de espaço acima dos títulos */
+    margin-bottom: 10px;
+    font-size: 1.3em; /* Ajusta o tamanho da fonte para impressão */ /* Borda preta para títulos de seção */
+    padding-bottom: 5px;
+  }
+
+  h1.print-title {
+    display: block !important;
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+
+  .cv-template {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    min-height: auto;
+  }
+
+  .cv-template section:last-child {
+    border-bottom: none;
+  }
+
+  .cv-template a {
+    color: #0000ff !important; /* Garante que links sejam azuis na impressão */
+    text-decoration: underline; /* Adiciona sublinhado para clareza */
+  }
+}
