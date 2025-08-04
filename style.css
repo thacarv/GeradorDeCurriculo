@@ -32,7 +32,7 @@ h3 {
 h1 {
   text-align: center;
   font-size: 2em; /* Reduzindo um pouco a fonte */
-  margin-bottom: 20px; /* Reduzindo a margem */
+  
 }
 
 h2 {
@@ -165,18 +165,25 @@ button:hover {
   list-style: disc; /* Mantendo o disc para as listas de atividades */
   padding-left: 15px;
   margin: 5px 0;
+  margin-left: 1em;
 }
 
 .cv-template ul li {
   margin-bottom: 5px; /* Reduzindo a margem */
   font-size: 0.9em;
+  color: #333;
+}
+
+.cv-template strong{
+  color: black;
 }
 
 .cv-template .experience-item,
 .cv-template .education-item,
 .cv-template .project-item,
 .cv-template .certification-item {
-  margin-bottom: 10px; /* Reduzindo a margem */
+  margin-bottom: 1.5em; /* Reduzindo a margem */
+  margin-left: 1em;
   border-left: 2px solid #333; /* Borda preta mais fina */
   padding-left: 10px; /* Reduzindo o padding */
 }
