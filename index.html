@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gerador de Currículos JSON</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
   </head>
   <body>
     <div class="container">
@@ -14,16 +15,15 @@
         <label for="jsonInput">Cole o JSON do seu currículo aqui:</label>
         <textarea
           id="jsonInput"
-          placeholder='Cole seu JSON aqui. Exemplo: {"informacoesPessoais": {"nomeCompleto": "Seu Nome"}}'
-        >
-        </textarea>
+          placeholder='Cole seu JSON aqui.'
+        ></textarea>
         <button id="generateCv">Gerar Currículo</button>
         <button id="clearInput">Limpar</button>
       </div>
 
       <div class="output-actions">
         <button id="printCv">Imprimir / Salvar como PDF</button>
-        <button id="copyHtml">Copiar HTML</button>
+        <button id="copyHtml">Copiar Texto do Currículo</button>
       </div>
 
       <div class="cv-preview">
