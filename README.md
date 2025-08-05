@@ -15,7 +15,7 @@ Este projeto oferece uma ferramenta simples e eficiente para gerar currículos f
 - **Cópia de HTML:** Opção para copiar o HTML gerado para uso em outras plataformas.
 - **Títulos de Seção Visíveis na Impressão:** Os títulos de cada categoria do currículo (Objetivo, Experiência, Habilidades, etc.) são exibidos tanto na prévia quanto na impressão.
 
-![alt text](example.png "Title")
+![alt text](example.png)
 
 ## Como Usar
 
