@@ -1,3 +1,6 @@
+<img width="960" height="808" alt="image" src="https://github.com/user-attachments/assets/cb047f4a-906f-4319-9b06-f91f4651bc0a" />
+
+
 # Gerador de Currículos em HTML a partir de JSON
 
 Este projeto oferece uma ferramenta simples e eficiente para gerar currículos formatados em HTML, prontos para impressão ou para serem salvos como PDF, a partir de uma estrutura de dados JSON. O sistema é otimizado para compatibilidade com ATS (Applicant Tracking Systems) e permite fácil personalização visual.
