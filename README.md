@@ -1,4 +1,3 @@
-<img width="960" height="808" alt="image" src="https://github.com/user-attachments/assets/cb047f4a-906f-4319-9b06-f91f4651bc0a" />
 
 
 # Gerador de Currículos em HTML a partir de JSON
@@ -15,6 +14,8 @@ Este projeto oferece uma ferramenta simples e eficiente para gerar currículos f
 - **Impressão e PDF:** Funcionalidade para imprimir o currículo diretamente do navegador ou salvá-lo como PDF, com o nome do candidato no título do arquivo.
 - **Cópia de HTML:** Opção para copiar o HTML gerado para uso em outras plataformas.
 - **Títulos de Seção Visíveis na Impressão:** Os títulos de cada categoria do currículo (Objetivo, Experiência, Habilidades, etc.) são exibidos tanto na prévia quanto na impressão.
+
+<img width="960" height="808" alt="image" src="https://github.com/user-attachments/assets/cb047f4a-906f-4319-9b06-f91f4651bc0a" />
 
 ## Como Usar
 
